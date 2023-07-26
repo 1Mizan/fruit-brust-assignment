@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-    <!-- daisy and tailwind css -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <!-- daisy and tailwind css -->
 
-<link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
-<!-- font-familyx -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
-<!-- font-awesome -->
-<script src="https://kit.fontawesome.com/5f237c26ca.js" crossorigin="anonymous"></script>
-<!-- font-family-css -->
-<style>
-  body{
-    font-family: 'Lato', sans-serif;
-  }
-</style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- font-familyx -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap"
+    rel="stylesheet">
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/5f237c26ca.js" crossorigin="anonymous"></script>
+  <!-- font-family-css -->
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 
-<!-- customization script -->
-<script>
+  <!-- customization script -->
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -36,88 +38,104 @@
 
 
 </head>
+
 <body>
-    <header class="max-w-screen-xl py-4 my-1  mx-auto">
-      <!-- nav bar --> 
-      <!-- md:opacity-0 lg:opacity-100 -->
-      <nav class="flex md:bg-nav-bg px-10 rounded-full">
-        <div class="navbar   ">
-          <div class=" text-white px-5 hidden md:block lg:block ">  
-            <a class="pr-2" href="">Home</a>
-            <a class="pr-2" href="">About Us</a>
-            <a class="pr-2" href="">Shop</a>
-            <a class="pr-2" href="">All Fruits</a>
-          </div>
-          <div class="flex flex-1 justify-center">
-            <img class="w-14 mr-2" src="./images/logo.png" alt="">
-            <p class="text-black md:text-white lg:text-white text-4xl font-bold">Fruit Burst</p>
-          </div>
-
-          <div class="flex-none  gap-2 py-2 ">
-            <div class="form bg-white rounded-full input-bordered input-bordered p-2 opacity-0 md:opacity-0 lg:opacity-100">
-              <input type="text" placeholder="Search Here " class=" ml-2 " />
-              <button class="mr-3"><i class="fa-solid fa-magnifying-glass"></i></button>
-              
-            </div>
-            <div class="flex-none block md:block lg:hidden mr-5">
-              <button class="btn btn-square btn-ghost">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-              </button>
-            </div>
-           
-           
-          </div>
-          
+  <header class="max-w-screen-xl py-4 my-1  mx-auto">
+    <!-- nav bar -->
+    <!-- md:opacity-0 lg:opacity-100 -->
+    <nav class="flex md:bg-nav-bg px-10 rounded-full">
+      <div class="navbar   ">
+        <div class=" text-white px-5 hidden md:block lg:block ">
+          <a class="pr-2" href="">Home</a>
+          <a class="pr-2" href="">About Us</a>
+          <a class="pr-2" href="">Shop</a>
+          <a class="pr-2" href="">All Fruits</a>
         </div>
-        
-      </nav>
+        <div class="flex flex-1 justify-center">
+          <img class="w-14 mr-2" src="./images/logo.png" alt="">
+          <p class="text-black md:text-white lg:text-white text-4xl font-bold">Fruit Burst</p>
+        </div>
+
+        <div class="flex-none  gap-2 py-2 ">
+          <div
+            class="form bg-white rounded-full input-bordered input-bordered p-2 opacity-0 md:opacity-0 lg:opacity-100">
+            <input type="text" placeholder="Search Here " class=" ml-2 " />
+            <button class="mr-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+          </div>
+          <div class="flex-none block md:block lg:hidden mr-5">
+            <button class="btn btn-square btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                class="inline-block w-5 h-5 stroke-current">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg>
+            </button>
+          </div>
 
 
-    </header>
-    <!-- banner section -->
+        </div>
+
+      </div>
+
+    </nav>
+
+
+  </header>
+  <!-- banner section -->
   <section class="max-w-screen-xl py-4 my-1 mx-auto">
-    <div class="carousel w-full ">
-      <div id="slide1" class="carousel-item relative w-full z-0">
+    <div class="carousel w-full z-10 ">
+      <div id="slide1" class="carousel-item relative w-full ">
+
         <div class="absolute text-white top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          
-            <h1 class=" text-lg md:text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your <br>doorstep</h1>
+
+          <h1 class=" text-lg md:text-5xl lg:text-7xl font-bold text-center">Exotic tastes at your <br>doorstep</h1>
           <p class="text-sm md:text-lg lg:xl text-center py-3">We supply highly quality organic products</p>
           <div class="flex justify-center ">
-            <button class="btn border-0 text-white bg-nav-bg text-center w-auto md:w-auto lg:auto">Shop Now</button>
-          
+            <button class="btn border-0 text-white bg-nav-bg text-center ">Shop Now</button>
+            
           </div>
+
+
         </div>
         <img src="images/banner1.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❮</a>
           <a href="#slide2" class="btn btn-circle">❯</a>
         </div>
-      </div> 
+      </div>
       <div id="slide2" class="carousel-item relative w-full">
+
+
+
         <img src="images/banner2.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide1" class="btn btn-circle">❮</a>
           <a href="#slide3" class="btn btn-circle">❯</a>
         </div>
-      </div> 
+      </div>
       <div id="slide3" class="carousel-item relative w-full">
+
+
         <img src="images/banner3.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❮</a>
           <a href="#slide4" class="btn btn-circle">❯</a>
         </div>
-      </div> 
+      </div>
       <div id="slide4" class="carousel-item relative w-full">
+
+
         <img src="images/banner4.png" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❮</a>
           <a href="#slide1" class="btn btn-circle">❯</a>
         </div>
       </div>
     </div>
-    
+
   </section>
-  <div class="bg-slate-100 flex w-[1196px] mx-auto justify-evenly -mt-20 ">
+  <div class="bg-white flex w-[1196px] mx-auto justify-evenly -mt-20 z-50">
     <div>
       <img src="images/fruit1.png" alt="">
       <p class="text-center">Strawberry</p>
@@ -139,11 +157,118 @@
       <p class="text-center">Mango</p>
     </div>
   </div>
-    <main>
-  
-    </main>
-    <footer>
+  <main>
+    <!-- deal of the day section  -->
+    <section class="max-w-screen-xl py-4 my-1 mx-auto mt-10">
+      <!-- container -->
+      <div class="flex items-center justify-between mb-12">
+        <div class="flex-1">
+          <h2 class="text-xl md:text-3xl lg:text-5xl font-extrabold">Deal of the day</h2>
+          <p class="mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div class="flex  justify-center flex-1 ">
+          <div>
+            <h2 class="text-5xl font-extrabold">29</h2>
+            <p class="text-center mt-2">Days</p>
+          </div>
+          <div class="items-center m-5"><i class="fa-solid fa-ellipsis-vertical "></i></div>
+          <div>
+            <h2 class="text-5xl font-extrabold">15</h2>
+            <p class="text-center  mt-2">Hours</p>
+          </div>
+          <div class="items-center  m-5"><i class="fa-solid fa-ellipsis-vertical  "></i></div>
+          <div>
+            <h2 class="text-5xl font-extrabold">25</h2>
+            <p class="text-center  mt-2">Minutes</p>
+          </div>
+          <div class="items-center  m-5"><i class="fa-solid fa-ellipsis-vertical "></i></div>
+          <div>
+            <h2 class="text-5xl font-extrabold">08</h2>
+            <p class="text-center  mt-2">Seconds</p>
+          </div>
 
-    </footer>
+
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="card bg-base-100 border-2 border-black">
+          <figure class="px-10 pt-10 ">
+            <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold text-2xl">12.90$ - 18.85$</h2>
+            <hr class="h-1 w-[244px] text-black my-6">
+            <p class="mb-6">Apples</p>
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            </div>
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn-ghost text-red-400" onclick="my_modal_5.showModal()">Details</button>
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box">
+                
+                <div class="card bg-base-100 ">
+                  <figure class="px-10 pt-10 ">
+                    <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title font-bold text-2xl">Apples</h2>
+                    
+                    <p class="mb-6">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+
+
+                <div class="modal-action">
+            <!-- if there is a button in form, it will close the modal -->
+             
+              <button class="btn btn-outline btn-error ">Close</button>
+              <button class="btn border-0 text-white bg-nav-bg text-center "><a href="">Shop Now</a></button>
+                </div>
+            </div>
+          </form>
+          </dialog>
+
+
+        </div>
+
+
+
+
+
+
+        <!-- jfdfdhlkf -->
+
+
+
+
+       
+
+
+        <!-- jndslkndsl -->
+
+
+
+
+      </div>
+
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
